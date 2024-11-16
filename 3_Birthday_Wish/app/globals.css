@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Use a modern font */
+  background-color: #f0f4f8; /* Light background */
+  color: #333;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+input, textarea {
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #4f46e5; /* Indigo color on focus */
+}
+
+button {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #6ee7b7, #3b82f6); /* Green to Blue gradient */
+}
+/* Existing styles... */
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden; /* Prevent overflow of animated elements */
+}
